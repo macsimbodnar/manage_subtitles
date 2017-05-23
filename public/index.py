@@ -1,4 +1,11 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/python
+
+# Turn on debug mode.
+import cgitb
+cgitb.enable()
+
+# Print necessary headers.
+print("Content-Type: text/html")
+print()
 
 print("ciao")
