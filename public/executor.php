@@ -45,6 +45,5 @@
 //}
 
 $uploaded_file = $_FILES['srt']['tmp_name'];
-//$lat_line = system('python ./python/engine.py ' . $uploaded_file, $retval);
-echo(system('./index.py', $ret));
-echo $ret;
+system('python ./python/engine.py ' . $uploaded_file, $retval);
+echo $retval;
