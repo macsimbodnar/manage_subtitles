@@ -46,4 +46,4 @@
 
 $uploaded_file = $_FILES['srt']['tmp_name'];
 
-$mystring = system('python ../python/engine.py ' . $uploaded_file, $retval);
+$mystring = system('python python/engine.py ' . $uploaded_file, $retval);
