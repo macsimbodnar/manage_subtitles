@@ -45,5 +45,5 @@
 //}
 
 $uploaded_file = $_FILES['srt']['tmp_name'];
-system('./engine.py ' . $uploaded_file, $retval);
-echo $retval;
+$res = system('./engine.py ' . $uploaded_file, $retval);
+echo $res;
