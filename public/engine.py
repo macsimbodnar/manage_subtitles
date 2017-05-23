@@ -23,4 +23,4 @@ class WriteTranscript:
 			
 result = WriteTranscript(sys.argv[1]).convert()
 
-print (result)
+print (result.encode('utf-8'))
