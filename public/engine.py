@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 
 import re, sys
 
@@ -8,10 +7,10 @@ class WriteTranscript:
 	def __init__ (self, path): 
 		self.path=path
 
-	def convert(self, pdf = False, lesson_title = ''):
+	def convert(self, lesson_title = ''):
 		testo_completo=""
 
-		srt_file = open(self.path,'r')
+		srt_file = open(self.path,'r', encoding('utf-8'))
 
 		for line in srt_file:
 			linea=line[:-2]
@@ -22,5 +21,6 @@ class WriteTranscript:
 		
 		return testo_completo
 			
-result = WriteTranscript(sys.argv[1]).convert(True, "ED101_0_1_01")
+result = WriteTranscript(sys.argv[1]).convert()
+
 print (result)
