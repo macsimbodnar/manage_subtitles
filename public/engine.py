@@ -10,10 +10,11 @@ class WriteTranscript:
 	def convert(self, lesson_title = ''):
 		testo_completo=""
 
-		srt_file = open(self.path,'r', encoding='unicode')
+		srt_file = open(self.path,'r')
 
 		for line in srt_file:
-			linea=line[:-2]
+			l = unicode(line, encoding='utf-8')
+			linea=l[:-2]
 
 			if re.search('[a-zA-Z]', line[:-1]):
 				testo_completo+=" " +linea
