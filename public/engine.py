@@ -10,7 +10,7 @@ class WriteTranscript:
 	def convert(self, lesson_title = ''):
 		testo_completo=""
 
-		srt_file = open(self.path,'r', encoding='utf-8')
+		srt_file = open(self.path,'r', encoding='unicode')
 
 		for line in srt_file:
 			linea=line[:-2]
