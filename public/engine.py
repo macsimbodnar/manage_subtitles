@@ -21,6 +21,4 @@ class WriteTranscript:
 		
 		return testo_completo
 			
-#print (WriteTranscript(sys.argv[1]).convert(True, "ED101_0_1_01"))
-#return (WriteTranscript(sys.argv[1]).convert(True, "ED101_0_1_01"))
-print ("ciao")
+print (WriteTranscript(sys.argv[1]).convert(True, "ED101_0_1_01"))
