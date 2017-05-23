@@ -21,6 +21,8 @@ class WriteTranscript:
 		
 		return testo_completo
 			
-result = WriteTranscript(sys.argv[1]).convert()
 
-return (result.encode('utf-8'))
+if __name__ == "__main__":
+    
+	result = WriteTranscript(sys.argv[1]).convert()
+	return result
