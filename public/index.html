@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SRT Converter</title>
+    <title>Nasty SRT Converter</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-    <form enctype="multipart/form-data" action="executor.php" method="POST" id="fm">
+<div class="nasty-div">
+    <form class="nasty-form" enctype="multipart/form-data" action="executor.php" method="POST" id="fm">
 
-        <label for="srt">Inserisci SRT</label>
-        <br/>
-        <input type="file" name="srt" id="srt" title="Inserisci SRT">
+        <h1>Inserisci SRT</h1>
 
-        <br/>
-        <br/>
+        <input class="nasty-input" type="file" name="srt" id="srt" title="Inserisci SRT" accept=".srt">
 
-        <!--<input type="submit" value="Upload Image" name="submit">-->
-
-        <button type="submit">Invia</button>
+        <button class="nasty-button" type="submit">Invia</button>
     </form>
+</div>
 </body>
 </html>

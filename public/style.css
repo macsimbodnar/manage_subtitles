@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+body {
+    background-color : floralwhite;
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+.nasty-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+
+    text-align: center;
+}
+.nasty-form {
+    width: 300px;
+    margin: 0 auto;
+}
+.nasty-label {
+    margin-bottom: 50px;
+}
+.nasty-input {
+
+}
+.nasty-button {
+    margin-top: 50px;
+}
