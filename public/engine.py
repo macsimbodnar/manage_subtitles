@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 import re, sys
 
@@ -13,7 +14,7 @@ class WriteTranscript:
 		srt_file = open(self.path,'r')
 
 		for line in srt_file:
-			linea=line[:-2].decode('utf-8')
+			linea=line[:-2]
 
 			if re.search('[a-zA-Z]', line[:-1]):
 				testo_completo+=" " +linea
